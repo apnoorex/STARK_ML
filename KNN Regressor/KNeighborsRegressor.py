@@ -57,9 +57,9 @@ class KNeighborsRegressor:
             The fitted K nearest neighbors regressor.
         """
         if len(X) < self._k:
-            raise ValueError("The number of samples cannot be smaller than parameter K")
+            raise ValueError("The number of samples cannot be smaller than parameter 'K'")
         if len(X) != len(y):
-            raise ValueError("X and y are not of the same length")
+            raise ValueError("'X' and 'y' are not of the same length")
         if self._weights_method not in ('uniform', 'distance'):
             raise ValueError("The 'weights' parameter must be a str among {'uniform', 'distance'}")
 
