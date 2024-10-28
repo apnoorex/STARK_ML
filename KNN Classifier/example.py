@@ -18,7 +18,7 @@ weight = 'distance' # {'uniform', 'distance'}
 # Classification model
 clf = KNN(n_neighbors, weights=weight)
 
-# Fit the model with train data
+# Fit the model with the train data
 clf.fit(X_train, y_train)
 
 # Make predictions
