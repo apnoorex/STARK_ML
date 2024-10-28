@@ -3,7 +3,7 @@ The library contains some of the most common Machine Learning
 algorithms implemented from scratch with examples of their use.
 
 The library was created for educational purposes.
-It is meant to partially mimic the functionality of Sci-Kit ML
+It is meant to partially mimic the functionality of Sci-Kit Learn ML
 library and uses some of its function names and parameter names.
 
 References:
