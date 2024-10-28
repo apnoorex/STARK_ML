@@ -13,7 +13,7 @@ class KNeighborsClassifier:
     Parameters
     ----------
     n_neighbors : int, default=3
-        Number of neighbors to use by default for :meth:`kneighbors` queries.
+        Number of neighbors to use by default.
 
     weights : {'uniform', 'distance'}, callable or None, default='uniform'
         Weight function used in prediction. Possible values:
