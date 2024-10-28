@@ -16,7 +16,7 @@ class KNeighborsRegressor:
 
     weights : {'uniform', 'distance'}, callable or None, default='uniform'
         Weight function used in prediction. Possible values:
-        - 'uniform' : uniform weights.  All points in each neighborhood
+        - 'uniform' : All points in each neighborhood
         are weighted equally.
         - 'distance' : Closer neighbors will have a greater influence than
         neighbors that are further away.
