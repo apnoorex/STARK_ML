@@ -8,7 +8,7 @@ library and uses some of its function names and parameter names.
 References:
 -----------
 
-The following resources were used as sources of knowledge:
+The following resources were used as a source of knowledge:
 
 1. https://www.youtube.com/@AssemblyAI
 2. https://www.youtube.com/@NormalizedNerd
