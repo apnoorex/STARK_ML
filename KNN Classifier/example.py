@@ -8,7 +8,7 @@ from KNeighborsClassifier import KNeighborsClassifier as KNN
 iris = datasets.load_iris()
 X, y = iris.data, iris.target
 
-# Split the dataset into test and train portions
+# Split the dataset into testing and training portions
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=51)
 
 # Model parameters
@@ -18,7 +18,7 @@ weight = 'distance' # {'uniform', 'distance'}
 # Classification model
 clf = KNN(n_neighbors, weights=weight)
 
-# Fit the model with the train data
+# Fit the model with the training data
 clf.fit(X_train, y_train)
 
 # Make predictions
