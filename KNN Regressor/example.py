@@ -17,13 +17,13 @@ n_neighbors = 23
 weight = 'distance' # {'uniform', 'distance'}
 
 # Classification model
-clf = KNN(n_neighbors, weights=weight)
+reg = KNN(n_neighbors, weights=weight)
 
 # Fit the model with the training data
-clf.fit(X_train, y_train)
+reg.fit(X_train, y_train)
 
 # Make predictions
-predictions = clf.predict(X_test)
+predictions = reg.predict(X_test)
 
 # Accuracy of the model
 print(mse(y_test, predictions))
