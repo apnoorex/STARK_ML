@@ -14,7 +14,7 @@ class LinearRegression:
 
     Attributes
     ----------
-    coef_ : array of shape (n_features, ) or (n_targets, n_features)
+    coef_ : numpy.ndarray of shape (n_features, )
         Estimated coefficients for the linear regression problem.
 
     intercept_ : float
