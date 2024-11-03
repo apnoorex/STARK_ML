@@ -26,7 +26,7 @@ class LogisticRegression():
         
     Attributes
     ----------
-    coef_ : array of shape (n_features, ) or (n_targets, n_features)
+    coef_ : numpy.ndarray of shape (n_features, ) or (n_targets, n_features)
         Estimated coefficients of the decision function.
 
     intercept_ : float
