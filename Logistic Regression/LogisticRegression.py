@@ -9,7 +9,7 @@ def progress(coef_prev, inpt_prev, coef, inpt):
 
 class LogisticRegression():
     """
-    Linear Regression classifier based on Gradient Descent approach.
+    Logistic Regression classifier based on Gradient Descent approach.
 
     Parameters
     ----------
