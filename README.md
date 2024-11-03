@@ -18,6 +18,8 @@ The following resources were used as a source of knowledge:
 3. https://www.youtube.com/@IBMTechnology
 4. https://blog.dailydoseofds.com/p/why-sklearns-linear-regression-has
 5. https://www.youtube.com/watch?v=EnnzQ0xQ6dU
-6. https://scikit-learn.org/dev/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
-7. https://scikit-learn.org/dev/modules/generated/sklearn.neighbors.KNeighborsRegressor.html
-8. https://scikit-learn.org/1.5/modules/generated/sklearn.linear_model.LinearRegression.html
+6. https://datatab.net/tutorial/logistic-regression
+7. https://scikit-learn.org/dev/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
+8. https://scikit-learn.org/dev/modules/generated/sklearn.neighbors.KNeighborsRegressor.html
+9. https://scikit-learn.org/1.5/modules/generated/sklearn.linear_model.LinearRegression.html
+10. https://scikit-learn.org/1.5/modules/generated/sklearn.linear_model.LogisticRegression.html
