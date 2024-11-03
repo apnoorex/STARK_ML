@@ -90,7 +90,7 @@ class LogisticRegression():
 
         Returns
         -------
-        y : ndarray of shape (n_samples,)
+        y : numpy.ndarray of shape (n_samples,)
             Array containing class label for each data sample.
         """
         linear_prediction = np.dot(X, self.coef_) + self.intercept_
@@ -101,7 +101,7 @@ class LogisticRegression():
 
     def get_params(self):
         """
-        Get parameters for this classifier.
+        Get parameters for the classifier.
 
         Returns
         -------
@@ -112,7 +112,7 @@ class LogisticRegression():
 
     def set_params(self, lr=0.001, max_iter=1000, tol=None):
         """
-        Set the parameters of this classifier.
+        Set the parameters for the classifier.
 
         If the parameters are not specified, the function sets the parameters to
         default values: lr=0.001, max_iter=1000, tol=pow(10, -5)*lr.
