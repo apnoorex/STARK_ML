@@ -22,8 +22,8 @@ reg = LinearRegression()
 reg.fit(X_train, y_train)
 
 # Model coefficients
-print('Slope(s):', reg.coef_)
-print('Y-intercept:', reg.intercept_)
+print(reg.coef_)
+print(reg.intercept_)
 
 # Make predictions
 predictions = reg.predict(X_test)
