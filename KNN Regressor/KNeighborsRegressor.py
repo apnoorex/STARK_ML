@@ -54,7 +54,7 @@ class KNeighborsRegressor:
         Returns
         -------
         self : KNeighborsRegressor
-            The fitted K nearest neighbors regressor.
+            Fitted K nearest neighbors regressor.
         """
         if len(X) < self._k:
             raise ValueError("The number of samples cannot be smaller than parameter 'K'")

@@ -55,7 +55,7 @@ class KNeighborsClassifier:
         Returns
         -------
         self : KNeighborsClassifier
-            The fitted K nearest neighbors classifier.
+            Fitted K nearest neighbors classifier.
         """
         if len(X) < self._k:
             raise ValueError("The number of samples cannot be smaller than parameter 'K'")
