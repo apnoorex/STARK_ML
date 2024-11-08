@@ -160,7 +160,6 @@ class DecisionTreeClassifier:
             leaves_gini = (weighted_l) * gini_l + (weighted_r) * gini_r
 
             gini_impurity = branch_gini - leaves_gini
-
             return gini_impurity
 
         elif self._criterion == 'entropy':
@@ -170,7 +169,6 @@ class DecisionTreeClassifier:
             leaves_entropy = (weighted_l) * entropy_l + (weighted_r) * entropy_r
 
             information_gain = branch_entropy - leaves_entropy
-
             return information_gain
 
     def _split(self, col, threshold):
