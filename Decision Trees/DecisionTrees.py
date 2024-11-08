@@ -251,5 +251,5 @@ class DecisionTreeClassifier:
         self._criterion = criterion
         self._splitter = splitter
         self._max_depth = max_depth
-        self._min_samples_split = min_samples_split
+        self._min_samples_split = math.ceil(min_samples_split)
         self.max_features = max_features
