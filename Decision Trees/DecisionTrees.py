@@ -241,7 +241,7 @@ class DecisionTreeClassifier:
                 'min_samples_split': self._min_samples_split,
                 'max_features': self.max_features}
 
-    def set_params(self, criterion='gini', splitter='best', max_depth=None, min_samples_split=2, max_features=None):
+    def set_params(self,*,criterion='gini', splitter='best', max_depth=None, min_samples_split=2, max_features=None):
         """
         Set the parameters for the classifier.
 
