@@ -129,7 +129,6 @@ class DecisionTreeClassifier:
 
             for th in thresholds:
                 split_quality = self._split_quality(y, col, th)
-
                 if split_quality > best_split_quality:
                     best_split_quality = split_quality
                     split_idx = feat_idx
@@ -158,9 +157,9 @@ class DecisionTreeClassifier:
             branch_gini = self._gini_index(y)
 
             gini_l, gini_r = self._gini_index(y[left_idxs]), self._gini_index(y[right_idxs])
-            leafs_gini = (weighted_l) * gini_l + (weighted_r) * gini_r
+            leaves_gini = (weighted_l) * gini_l + (weighted_r) * gini_r
 
-            gini_impurity = branch_gini - leafs_gini
+            gini_impurity = branch_gini - leaves_gini
 
             return gini_impurity
 
