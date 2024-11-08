@@ -79,7 +79,7 @@ class KNeighborsClassifier:
 
         Returns
         -------
-        y : ndarray of shape (n_queries,)
+        y : numpy.ndarray of shape (n_queries,)
             Class labels for each data sample.
         """
         if isinstance(X, pd.DataFrame) or isinstance(X, pd.Series):

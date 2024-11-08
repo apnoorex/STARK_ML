@@ -78,7 +78,7 @@ class KNeighborsRegressor:
 
         Returns
         -------
-        y : ndarray of shape (n_queries,)
+        y : numpy.ndarray of shape (n_queries,)
             Target values.
         """
         if isinstance(X, pd.DataFrame) or isinstance(X, pd.Series):
