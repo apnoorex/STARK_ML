@@ -93,7 +93,7 @@ class DecisionTreeClassifier:
         X = X.to_numpy() if isinstance(X, pd.DataFrame) or isinstance(X, pd.Series) else X
         y = y.to_numpy().flatten() if isinstance(y, pd.DataFrame) or isinstance(y, pd.Series) else y
 
-        self.max_features = X.shape[1] if not self.max_features else min(X.shape[1],self.max_features)
+        self.max_features = X.shape[1] if not self.max_features else min(X.shape[1], self.max_features)
         self._root = self._build_tree(X, y)
 
     def _build_tree(self, X, y, depth=0):
