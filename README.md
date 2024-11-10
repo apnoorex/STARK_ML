@@ -6,7 +6,7 @@ The library was created for educational purposes.
 It is designed to partially mimic the functionality of the scikit-learn
 ML library and uses some of its function names and parameter names.
 
-The complete documentation for the library can be found at https://starkml.webflow.io/
+Complete documentation for the library can be found at https://starkml.webflow.io/
 
 References:
 -----------
