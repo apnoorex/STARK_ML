@@ -25,4 +25,6 @@ The following resources were used as a source of knowledge:
 10. https://scikit-learn.org/1.5/modules/generated/sklearn.linear_model.LinearRegression
 11. https://scikit-learn.org/1.5/modules/generated/sklearn.linear_model.LogisticRegression
 12. https://scikit-learn.org/1.5/modules/generated/sklearn.tree.DecisionTreeClassifier
-13. https://www.youtube.com/watch?v=B6a64wdD7Zs
+13. https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier
+14. https://www.youtube.com/watch?v=B6a64wdD7Zs
+15. https://builtin.com/data-science/random-forest-algorithm#:~:text=What%20is%20a%20random%20forest,and%20produce%20more%20accurate%20predictions.
