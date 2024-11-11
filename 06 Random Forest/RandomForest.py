@@ -21,22 +21,23 @@ class RandomForestClassifier:
 
     Parameters
     ----------
-    n_estimators : int, default=10
+    n_estimators : int, default=100
         The number of trees in the forest.
 
     criterion : {'gini', 'entropy'}, default='gini'
-        The function to measure the quality of a split. Supported criteria are 'gini'
-        for the Gini Impurity and 'entropy' for the Kullback–Leibler divergence.
+        The function to measure the quality of a split when building each tree.
+        Supported criteria are 'gini' for the Gini Impurity and 'entropy' for
+        the Kullback–Leibler divergence.
 
     max_depth : int, default=None
-        The maximum depth of the tree.
+        The maximum depth of each tree in the forest.
         
         If None, the construction of the tree continues until either all the nodes
         are pure or all leaves have less than min_samples_split samples.
         
     min_samples_split : int or float, default=2
         The minimum number of samples required to allow further splitting of an 
-        internal node.
+        internal node of each tree in the forest.
 
         If float, 'ceil' function is applied to determine the min_samples_split.
 
@@ -53,10 +54,9 @@ class RandomForestClassifier:
         Whether or not to bootstrap samples. If False, the whole dataset is used
         for each tree.
 
-        If float, 'ceil' function is applied to determine the min_samples_split.
-
     max_samples : int or float, default=None
-        If bootstrap is True, the number of samples to draw from the dataset to.
+        If bootstrap is True, the number of samples to draw from the dataset to
+        build each tree.
 
         If None (default), then draw 'X.shape[0]' samples.
         If int, then draw `max_samples` samples.
