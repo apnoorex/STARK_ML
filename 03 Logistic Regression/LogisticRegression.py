@@ -101,7 +101,7 @@ class LogisticRegression():
 
     def get_params(self):
         """
-        Get parameters for the classifier.
+        Get parameters of the classifier.
 
         Returns
         -------

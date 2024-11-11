@@ -180,7 +180,7 @@ class KNeighborsClassifier:
     
     def get_params(self) -> dict:
         """
-        Get parameters for this estimator.
+        Get parameters of the estimator.
 
         Returns
         -------
