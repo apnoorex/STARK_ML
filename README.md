@@ -17,7 +17,7 @@ The following resources were used as a source of knowledge:
 2. https://www.youtube.com/@NormalizedNerd
 3. https://www.youtube.com/@IBMTechnology
 4. https://www.youtube.com/@statquest
-5. https://www.youtube.com/@SerranoAcademy
+5. https://www.youtube.com/@RyanAndMattDataScience
 6. https://blog.dailydoseofds.com/p/why-sklearns-linear-regression-has
 7. https://www.youtube.com/watch?v=EnnzQ0xQ6dU
 8. https://datatab.net/tutorial/logistic-regression
