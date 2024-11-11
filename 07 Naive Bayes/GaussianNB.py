@@ -22,7 +22,7 @@ class GaussianNB:
 
     def fit(self, X, y):
         """
-        Fit the classifier according to provided data.
+        Fit the classifier according to the provided data.
 
         Parameters
         ----------
