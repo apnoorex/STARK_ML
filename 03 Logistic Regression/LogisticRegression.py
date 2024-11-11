@@ -114,7 +114,7 @@ class LogisticRegression():
         """
         Set the parameters for the classifier.
 
-        If the parameters are not specified, the function sets the parameters to
+        If parameters are not specified, the function sets them to
         default values: lr=0.001, max_iter=1000, tol=10^-5*lr.
         """
         self._lr = lr

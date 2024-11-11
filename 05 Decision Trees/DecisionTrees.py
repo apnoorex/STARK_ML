@@ -242,7 +242,7 @@ class DecisionTreeClassifier:
         """
         Set the parameters for the classifier.
 
-        If the parameters are not specified, the function sets the parameters to
+        If parameters are not specified, the function sets them to
         default values.
         """
         self._criterion = criterion

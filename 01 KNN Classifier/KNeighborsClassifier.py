@@ -133,7 +133,7 @@ class KNeighborsClassifier:
 
     def kneighbors(self, X, n_neighbors, return_distance=True):
         """
-        Find the K nearest neighbors of a point or points.
+        Find K nearest neighbors of a point or points.
 
         Returns indices of and distances to the K specified neighbors
         of a point or points. A test set needs to be fitted first (See
@@ -193,7 +193,7 @@ class KNeighborsClassifier:
         """
         Set the parameters of this estimator.
 
-        If the parameters are not specified, the function sets the parameters to
+        If parameters are not specified, the function sets them to
         default values: n_neighbors = 3, weights = 'uniform'.
         """
         self._k = n_neighbors

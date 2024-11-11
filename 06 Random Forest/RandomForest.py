@@ -86,7 +86,7 @@ class RandomForestClassifier:
 
     def fit(self, X, y):
         """
-        Build a a forest of trees based on the training set provided.
+        Build a random forest based on the training set provided.
 
         Parameters
         ----------
