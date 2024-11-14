@@ -47,7 +47,7 @@ class PCA:
 
         Returns
         -------
-        self:
+        self : PCA
             Fitted estimator.
         """
         if self._n_components_ is not None:
