@@ -74,7 +74,7 @@ class DecisionTreeClassifier:
 
         Returns
         -------
-        self
+        self : DecisionTreeClassifier
             Fitted classifier.
         """
         if self._criterion not in ('gini', 'entropy'):
@@ -95,6 +95,8 @@ class DecisionTreeClassifier:
 
         self.max_features = X.shape[1] if not self.max_features else min(X.shape[1], self.max_features)
         self._root = self._build_tree(X, y)
+
+        return self
 
     def _build_tree(self, X, y, depth=0):
         n_samples, n_features = X.shape
@@ -225,7 +227,7 @@ class DecisionTreeClassifier:
 
     def get_params(self):
         """
-        Get parameters of the classifier.
+        Get parameters for the classifier.
 
         Returns
         -------
