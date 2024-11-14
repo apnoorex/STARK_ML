@@ -22,7 +22,7 @@ class PCA:
     ----------
     components_ : numpy.ndarray of shape (n_components, n_features)
         The right singular vectors of the centered input data, parallel to its
-        eigenvectors. The components are sorted descending order.
+        eigenvectors. The components are sorted in the descending order.
 
     mean_ : numpy.ndarray of shape (n_features,)
         Per-feature mean, estimated from the training set. Equal to `X.mean(axis=0)`.
