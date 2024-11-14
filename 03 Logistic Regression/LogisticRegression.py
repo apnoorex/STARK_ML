@@ -53,7 +53,7 @@ class LogisticRegression():
 
         Returns
         -------
-        self
+        self : LogisticRegression
             Fitted classifier.
         """
         if self._lr >= 1:

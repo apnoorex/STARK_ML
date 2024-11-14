@@ -47,7 +47,7 @@ class LinearRegression:
                 
         Returns
         -------
-        self : object
+        self : LinearRegression
             Fitted estimator.
         """        
         self._is_df = isinstance(X, pd.DataFrame)
