@@ -25,7 +25,7 @@ class PCA:
         eigenvectors. The components are sorted in the descending order.
 
     mean_ : numpy.ndarray of shape (n_features,)
-        Per-feature mean, estimated from the training set. Equal to `X.mean(axis=0)`.
+        Per-feature mean, estimated from the training set. Equal to 'X.mean(axis=0)'.
     """
     def __init__(self, n_components=None, *, copy=True):
         self._n_components_ = n_components
