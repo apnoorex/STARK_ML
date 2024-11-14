@@ -98,7 +98,7 @@ class RandomForestClassifier:
 
         Returns
         -------
-        self
+        self : RandomForestClassifier
             Fitted classifier.
         """
         if self._n_estimators < 1:
@@ -135,6 +135,8 @@ class RandomForestClassifier:
                 tree.fit(X, y)
 
             self._trees.append(tree)
+
+        return self
 
     def _get_max_features(self):
         if self._max_features == 'sqrt':
@@ -194,7 +196,7 @@ class RandomForestClassifier:
 
     def get_params(self):
         """
-        Get parameters of the classifier.
+        Get parameters for the classifier.
 
         Returns
         -------

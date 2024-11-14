@@ -5,7 +5,7 @@ import math
 
 
 class Node:
-    def __init__(self, feature=None, threshold=None, left=None, right=None,*,value=None):
+    def __init__(self, feature=None, threshold=None, left=None, right=None,*, value=None):
         self.feature = feature
         self.threshold = threshold
         self.left = left
@@ -74,7 +74,7 @@ class DecisionTreeClassifier:
 
         Returns
         -------
-        self
+        self : DecisionTreeClassifier
             Fitted classifier.
         """
         if self._criterion not in ('gini', 'entropy'):
@@ -93,8 +93,10 @@ class DecisionTreeClassifier:
         X = X.to_numpy() if isinstance(X, pd.DataFrame) or isinstance(X, pd.Series) else X
         y = y.to_numpy().flatten() if isinstance(y, pd.DataFrame) or isinstance(y, pd.Series) else y
 
-        self.max_features = X.shape[1] if not self.max_features else min(X.shape[1],self.max_features)
+        self.max_features = X.shape[1] if not self.max_features else min(X.shape[1], self.max_features)
         self._root = self._build_tree(X, y)
+
+        return self
 
     def _build_tree(self, X, y, depth=0):
         n_samples, n_features = X.shape
@@ -129,7 +131,6 @@ class DecisionTreeClassifier:
 
             for th in thresholds:
                 split_quality = self._split_quality(y, col, th)
-
                 if split_quality > best_split_quality:
                     best_split_quality = split_quality
                     split_idx = feat_idx
@@ -158,10 +159,9 @@ class DecisionTreeClassifier:
             branch_gini = self._gini_index(y)
 
             gini_l, gini_r = self._gini_index(y[left_idxs]), self._gini_index(y[right_idxs])
-            leafs_gini = (weighted_l) * gini_l + (weighted_r) * gini_r
+            leaves_gini = (weighted_l) * gini_l + (weighted_r) * gini_r
 
-            gini_impurity = branch_gini - leafs_gini
-
+            gini_impurity = branch_gini - leaves_gini
             return gini_impurity
 
         elif self._criterion == 'entropy':
@@ -171,7 +171,6 @@ class DecisionTreeClassifier:
             leaves_entropy = (weighted_l) * entropy_l + (weighted_r) * entropy_r
 
             information_gain = branch_entropy - leaves_entropy
-
             return information_gain
 
     def _split(self, col, threshold):
@@ -241,15 +240,15 @@ class DecisionTreeClassifier:
                 'min_samples_split': self._min_samples_split,
                 'max_features': self.max_features}
 
-    def set_params(self, criterion='gini', splitter='best', max_depth=None, min_samples_split=2, max_features=None):
+    def set_params(self,*,criterion='gini', splitter='best', max_depth=None, min_samples_split=2, max_features=None):
         """
         Set the parameters for the classifier.
 
-        If the parameters are not specified, the function sets the parameters to
+        If parameters are not specified, the function sets them to
         default values.
         """
         self._criterion = criterion
         self._splitter = splitter
         self._max_depth = max_depth
-        self._min_samples_split = min_samples_split
+        self._min_samples_split = math.ceil(min_samples_split)
         self.max_features = max_features
