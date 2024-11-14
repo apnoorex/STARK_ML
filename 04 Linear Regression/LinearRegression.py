@@ -62,6 +62,8 @@ class LinearRegression:
         self.intercept_ = self._beta[0]
         self.coef_ = self._beta[1:]
 
+        return self
+
     def predict(self, X):
         """
         Make predictions using the linear model.
@@ -80,8 +82,8 @@ class LinearRegression:
         """        
         X = np.insert(X, 0, 1, axis=1)
 
-        preds = np.sum(np.multiply(X, self._beta), axis=1)
+        predictions = np.sum(np.multiply(X, self._beta), axis=1)
 
         if self._is_df:
-            return np.array([[pred] for pred in preds])
-        return preds
+            return np.array([[pred] for pred in predictions])
+        return predictions
