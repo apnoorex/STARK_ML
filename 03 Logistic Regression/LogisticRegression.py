@@ -79,6 +79,8 @@ class LogisticRegression():
             if progress(coef_prev, inpt_prev, self.coef_, self.intercept_) < self._tol:
                 break
 
+        return self
+
     def predict(self, X):
         """
         Predict class labels for X.
@@ -101,7 +103,7 @@ class LogisticRegression():
 
     def get_params(self):
         """
-        Get parameters of the classifier.
+        Get parameters for the classifier.
 
         Returns
         -------
