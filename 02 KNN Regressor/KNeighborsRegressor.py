@@ -67,6 +67,8 @@ class KNeighborsRegressor:
         self.X_train = X.to_numpy() if isinstance(X, pd.DataFrame) or isinstance(X, pd.Series) else X
         self.y_train = y.to_numpy() if isinstance(y, pd.DataFrame) or isinstance(y, pd.Series) else y
 
+        return self
+
     def predict(self, X):
         """
         Predict the target for the provided data.
@@ -179,7 +181,7 @@ class KNeighborsRegressor:
 
     def get_params(self) -> dict:
         """
-        Get parameters of the estimator.
+        Get parameters for the estimator.
 
         Returns
         -------
