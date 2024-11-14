@@ -55,6 +55,7 @@ class PCA:
                 raise ValueError("Parameter 'n_components' must be a positive natural number.")
 
         self._fit(X)
+        
         return self
 
     def _fit(self, X):
