@@ -1,4 +1,4 @@
-# STARK_ML
+# Stark ML
 The library contains some of the most common Machine Learning
 algorithms implemented from scratch using NumPy with examples of their use.
 
