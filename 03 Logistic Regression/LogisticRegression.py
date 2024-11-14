@@ -7,6 +7,7 @@ def sigmoid(y):
 def progress(coef_prev, inpt_prev, coef, inpt):
     return (np.sum((coef_prev - coef) ** 2) + (inpt_prev - inpt) ** 2)
 
+
 class LogisticRegression():
     """
     Logistic Regression classifier based on Gradient Descent approach.
