@@ -4,8 +4,7 @@ from sklearn import datasets
 
 # Dataset
 data = datasets.load_iris()
-X = data.data
-y = data.target
+X, y = data.data, data.target
 
 # PCA model
 pca = PCA()
