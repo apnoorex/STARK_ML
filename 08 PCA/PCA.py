@@ -88,8 +88,8 @@ class PCA:
 
         Parameters
         ----------
-        X : numpy.ndarray of shape (n_features)
-            Training data.
+        X : numpy.ndarray of shape (n_features, )
+            New data.
 
         Returns
         -------
