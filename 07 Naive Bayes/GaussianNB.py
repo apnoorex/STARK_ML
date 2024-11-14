@@ -34,7 +34,7 @@ class GaussianNB:
 
         Returns
         -------
-        self
+        self : GaussianNB
             Fitted classifier.
         """
         if self._var_smoothing <= 0:
@@ -65,6 +65,8 @@ class GaussianNB:
             self._var[idx, :] = X_clss.var(axis=0)
 
         self._smoothen_variance()
+
+        return self
 
     def _smoothen_variance(self):
         max_variance = np.max(self._var)
@@ -109,7 +111,7 @@ class GaussianNB:
 
     def get_params(self):
         """
-        Get parameters of the classifier.
+        Get parameters for the classifier.
 
         Returns
         -------
