@@ -133,7 +133,7 @@ class PCA:
 
     def set_params(self, n_components=None, *, copy=True):
         """
-        Set the parameters for the estimator.
+        Set parameters for the estimator.
 
         If parameters are not specified, the function sets them to
         default values.
