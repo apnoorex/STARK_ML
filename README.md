@@ -30,7 +30,10 @@ The following resources were used as a source of knowledge:
 15. https://scikit-learn.org/1.5/modules/naive_bayes
 16. https://scikit-learn.org/dev/modules/generated/sklearn.naive_bayes.GaussianNB
 17. https://scikit-learn.org/dev/modules/generated/sklearn.decomposition.PCA
-18. https://www.youtube.com/watch?v=B6a64wdD7Zs
-19. https://builtin.com/data-science/random-forest-algorithm#:~:text=What%20is%20a%20random%20forest,and%20produce%20more%20accurate%20predictions.
-20. https://www.youtube.com/watch?v=Gx7MmwmBFaM&t=1005s
-21. https://www.youtube.com/watch?v=Stpu0tguCGc
+18. https://scikit-learn.org/dev/modules/generated/sklearn.svm.SVC
+19. https://www.youtube.com/watch?v=B6a64wdD7Zs
+20. https://builtin.com/data-science/random-forest-algorithm#:~:text=What%20is%20a%20random%20forest,and%20produce%20more%20accurate%20predictions.
+21. https://www.youtube.com/watch?v=Gx7MmwmBFaM&t=1005s
+22. https://www.youtube.com/watch?v=Stpu0tguCGc
+23. https://adeveloperdiary.com/data-science/machine-learning/support-vector-machines-for-beginners-training-algorithms/
+24. https://adeveloperdiary.com/data-science/machine-learning/support-vector-machines-for-beginners-kernel-svm/
