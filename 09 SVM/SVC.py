@@ -22,7 +22,7 @@ class SVC:
 
     https://adeveloperdiary.com/data-science/machine-learning/support-vector-machines-for-beginners-training-algorithms/
     """
-    def __init__(self, *, C=1.0, degree=2, max_iter=1000):
+    def __init__(self, *, C=1.0, degree=3, max_iter=1000):
         #Parameters
         self._C = C
         self._degree = degree
@@ -113,7 +113,7 @@ class SVC:
         """
         return {'C': self._C, 'degree': self._degree, 'max_iter' : self._max_iter}
 
-    def set_params(self, *, C=1.0, degree=2, max_iter=1000):
+    def set_params(self, *, C=1.0, degree=3, max_iter=1000):
         """
         Set parameters for the classifier.
 
