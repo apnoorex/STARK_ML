@@ -18,7 +18,7 @@ class SVC:
 
     Note
     ----
-    The idea for the algorithm was borrowed from here:
+    The idea behind the algorithm was borrowed from here:
 
     https://adeveloperdiary.com/data-science/machine-learning/support-vector-machines-for-beginners-training-algorithms/
     """
