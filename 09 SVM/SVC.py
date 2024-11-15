@@ -48,7 +48,7 @@ class SVC:
             Training data.
 
         y : numpy.ndarray of shape (n_samples,)
-            Target values as  with 1 and -1 for class labels.
+            Target values with 1 and -1 for class labels.
 
         Returns
         -------
