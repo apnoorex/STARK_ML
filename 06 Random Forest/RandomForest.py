@@ -47,8 +47,8 @@ class RandomForestClassifier:
         If int, then consider 'max_features' features ar each split.
         If float, then 'ceil' function is applied to determine the number of
         features.
-        If 'sqrt', then `max_features=sqrt(n_features)`.
-        If 'log2', then `max_features=log2(n_features)`.
+        If 'sqrt', then 'max_features=sqrt(n_features)'.
+        If 'log2', then 'max_features=log2(n_features)'.
 
     bootstrap : bool, default=True
         Whether or not to bootstrap samples. If False, the whole dataset is used
@@ -59,9 +59,9 @@ class RandomForestClassifier:
         build each tree.
 
         If None (default), then draw 'X.shape[0]' samples.
-        If int, then draw `max_samples` samples.
-        If float, then draw `max(round(n_samples * max_samples), 1)` samples. In
-        this case `max_samples` should be in the interval `(0.0, 1.0]`.
+        If int, then draw 'max_samples' samples.
+        If float, then draw 'max(round(n_samples * max_samples), 1)' samples. In
+        this case 'max_samples' should be in the interval '(0.0, 1.0]'.
     """
     def __init__(
             self,
