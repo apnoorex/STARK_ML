@@ -49,7 +49,7 @@ class DecisionTreeClassifier:
     Attributes
     ----------
     max_features : int
-        The number of max_features. It is either provided by the ised or inferred
+        The number of features. It is either provided by the iser or inferred
         by the algorithm internally.
     """
     def __init__(self,*, criterion='gini', splitter='best', max_depth=None, min_samples_split=2, max_features=None):
