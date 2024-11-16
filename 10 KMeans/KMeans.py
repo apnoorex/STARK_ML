@@ -23,7 +23,7 @@ class KMeans:
         Relative tolerance that determines the difference between the results of two
         consecutive iterations to declare convergence.
 
-    random_state : int, default=0.0001
+    random_state : int, default=None
         Determines random number generation for centroid initialization.
     """
     def __init__(self, n_clusters=8, *, max_iter=300, tol=0.0001, random_state=None):
