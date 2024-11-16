@@ -37,7 +37,7 @@ class KMeans:
         self._n_samples = None
         self.n_features_in_ = None
         self._clusters = [[] for _ in range(self._K)] # [[cl_1] [cl_2] ... [cl_n]]
-        self.cluster_centers_ = [] # centers for each claster
+        self.cluster_centers_ = [] # centers for each cluster
         self._n_runs = 3 # number of runs to find the lowest variance
 
     def fit(self, X, y=None):
@@ -134,7 +134,7 @@ class KMeans:
     
     def fit_predict(self, X, y=None):
         """
-        Compute claster centers and predict the closest cluster for each sample in X.
+        Compute cluster centers and predict the closest cluster for each sample in X.
         Equivalent of fit(X).predict(X).
 
         Parameters
