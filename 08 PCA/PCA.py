@@ -102,8 +102,7 @@ class PCA:
 
     def fit_transform(self, X, y=None):
         """
-        Fit the model with X and apply the dimensionality reduction on it
-        done in one step.
+        Fit the model with X and apply the dimensionality reduction on it.
 
         Parameters
         ----------
