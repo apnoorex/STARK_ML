@@ -98,7 +98,7 @@ class KMeans:
             all_cluster_centers.append(cluster_centers)
             all_clusters.append(clusters)
 
-        # Choose clustering based on the lowest variance
+        # Choose the best clustering based on the lowest variance
         best_run = np.argmin(all_variances)
         self._clusters = all_clusters[best_run]
         self.cluster_centers_ = all_cluster_centers[best_run]
