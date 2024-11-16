@@ -24,7 +24,7 @@ class KMeans:
         consecutive iterations to declare convergence.
 
     random_state : int, default=None
-        Determines random number generation for centroid initialization.
+        Determines random number generator used to initializes the centroids.
     """
     def __init__(self, n_clusters=8, *, max_iter=300, tol=0.0001, random_state=None):
         # Parameters
