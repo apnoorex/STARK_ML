@@ -11,6 +11,9 @@ k = KMeans(n_clusters=3, max_iter=150, random_state=17)
 # Fit the model and make predictions
 k.fit_predict(X)
 
+# Print the coordinates of cluster centers
+print('Cluster centers:', k.cluster_centers_)
+
 # Plot the results
 fig, ax = plt.subplots(figsize=(8, 6))
 
